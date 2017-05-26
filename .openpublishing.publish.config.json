@@ -1,5 +1,4 @@
 {
-  "build_entry_point": "op",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
   "docsets_to_publish": [
@@ -8,7 +7,7 @@
       "build_source_folder": "MSDN",
       "build_output_subfolder": "MSDN",
       "locale": "it-it",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -22,7 +21,7 @@
       "build_source_folder": "TechNet",
       "build_output_subfolder": "TechNet",
       "locale": "it-it",
-      "version": 0,
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -30,13 +29,46 @@
         "RestApi": "Content"
       },
       "build_entry_point": "op"
+    },
+    {
+      "docset_name": "Docs_Community",
+      "build_source_folder": "Docs",
+      "build_output_subfolder": "Docs_Community",
+      "locale": "it-it",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [],
+  "notification_subscribers": [
+    ""
+  ],
   "branches_to_filter": [
     ""
   ],
   "skip_source_output_uploading": false,
-  "dependent_repositories": [],
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.it-it",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/MicrosoftDocs/CommunityDocs",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
+    }
+  ],
   "need_generate_pdf_url_template": false
 }
