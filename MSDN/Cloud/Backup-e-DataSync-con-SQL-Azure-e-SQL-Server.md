@@ -8,6 +8,7 @@ ms.date: 08/01/2016
 ms.topic: article
 ms.service: cloud
 ms.custom: CommunityDocs
+redirect_url: https://docs.microsoft.com/it-it/azure/
 ---
 
 # Backup e DataSync con SQL Azure e SQL Server
